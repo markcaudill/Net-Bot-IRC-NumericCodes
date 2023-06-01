@@ -1,0 +1,79 @@
+=head1 NAME
+
+Net::Bot::IRC::NumericCodes - A module for abstracting IRC numeric codes.
+
+=head1 VERSION
+
+Version 0.05
+
+
+=cut
+
+=head1 SYNOPSIS
+
+    use Net::Bot::IRC::NumericCodes;
+
+    my $nc = IRC::NumericCodes->new();
+
+    # Lookup the numeric based on the code string.
+    if ($code == $nc->str2num("RPL_WELCOME")) {
+        # Do something.
+    }
+
+    # Look up the code string based on the numeric code.
+    if ($strcode eq $nc->num2str(001)) {
+        # Do some other stuff.
+    }
+
+For a full list of codes please read L<< http://tools.ietf.org/html/rfc2812 >>.
+
+=head1 FUNCTIONS
+
+=head2 new()
+
+
+=cut
+
+=head2 num2str($numericCode)
+
+
+=cut
+
+=head2 str2num($strCode)
+
+
+=cut
+
+=head1 AUTHOR
+
+Caudill, Mark, L<< mailto:mcaudillATcpan.org >>
+
+=head1 BUGS
+
+Please report any bugs or feature requests to the maintainer.
+
+
+=head1 SUPPORT
+
+You can find documentation for this module with the perldoc command.
+
+    perldoc Net::Bot::IRC::NumericCodes
+
+=head1 DEVELOPMENT
+
+You can find the current sources for this at L<< git://github.com/markcaudill/Net-Bot-IRC-NumericCodes.git >>.
+
+=head1 COPYRIGHT & LICENSE
+
+Copyright 2023 Caudill, Mark.
+
+This program is free software; you can redistribute it and/or modify it
+under the terms of either: the GNU General Public License as published
+by the Free Software Foundation; or the Artistic License.
+
+See http://dev.perl.org/licenses/ for more information.
+
+
+
+=cut
+
