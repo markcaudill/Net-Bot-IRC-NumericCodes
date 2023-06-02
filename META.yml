@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:               Net-Bot-IRC-NumericCodes
-version:            0.5.1
+version:            1.0.0
 abstract:           A module for abstracting IRC numeric codes.
 author:
     - Mark Caudill <mcaudill@cpan.org>
